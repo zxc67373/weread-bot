@@ -1,0 +1,599 @@
+[2026-04-23 16:18:01] 
+📚 微信读书阅读机器人 v0.3.6
+[2026-04-23 16:18:01] 🚀 启动模式: immediate
+[2026-04-23 16:18:01] 📖 阅读模式: smart_random
+[2026-04-23 16:18:01] 🎯 目标时长: 30-50 分钟
+[2026-04-23 16:18:01] 👥 用户数量: 1
+
+[2026-04-23 16:18:01] 🚀 启动模式: 立即执行
+2026-04-23 16:18:01,417 - ERROR    - ❌ 阅读会话执行失败: Using SOCKS proxy, but the 'socksio' package is not installed. Make sure to install httpx using `pip install httpx[socks]`.
+[2026-04-23 16:18:01] ✅ 通道 pushplus 通知发送成功
+[2026-04-23 16:18:01] 📊 通知发送完成: 1/1 个通道成功
+[2026-04-23 16:18:19] 
+📚 微信读书阅读机器人 v0.3.6
+[2026-04-23 16:18:19] 🚀 启动模式: immediate
+[2026-04-23 16:18:19] 📖 阅读模式: smart_random
+[2026-04-23 16:18:19] 🎯 目标时长: 30-50 分钟
+[2026-04-23 16:18:19] 👥 用户数量: 1
+
+[2026-04-23 16:18:19] 🚀 启动模式: 立即执行
+[2026-04-23 16:18:19] ✅ 已从全局文件加载CURL配置: curl_command.txt
+[2026-04-23 16:18:19] ✅ 用户 default 已使用CURL中的请求数据
+[2026-04-23 16:18:19] ✅ 用户 default CURL配置解析成功
+[2026-04-23 16:18:19] 🚀 微信读书阅读机器人启动
+[2026-04-23 16:18:19] 📋 配置信息: 阅读模式 smart_random, 目标时长 30-50 分钟
+[2026-04-23 16:18:19] ⏳ 启动延迟 5 秒...
+[2026-04-23 16:18:24] 🎯 本次目标阅读时长: 36 分钟
+[2026-04-23 16:18:24] 🍪 刷新cookie...
+2026-04-23 16:18:24,779 - INFO     - HTTP Request: POST https://weread.qq.com/web/login/renewal "HTTP/1.1 200 OK"
+[2026-04-23 16:18:24] ✅ Cookie刷新成功，新密钥: qIo5_ZSY***
+2026-04-23 16:18:30,749 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-23 16:18:36,767 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-23 16:18:36] ✅ 阅读成功，已记入 30 秒（累计 30 秒 / 目标 2160 秒）
+[2026-04-23 16:18:36] 📊 进度(服务器记入/目标): 0分 / 36分，实际运行: 0分
+2026-04-23 16:19:06,372 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-23 16:19:12,410 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-23 16:19:12] ✅ 阅读成功，已记入 30 秒（累计 60 秒 / 目标 2160 秒）
+[2026-04-23 16:19:12] 📊 进度(服务器记入/目标): 1分 / 36分，实际运行: 0分
+2026-04-23 16:19:38,295 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-23 16:19:44,313 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-23 16:19:44] ✅ 阅读成功，已记入 26 秒（累计 86 秒 / 目标 2160 秒）
+[2026-04-23 16:19:44] 📊 进度(服务器记入/目标): 1分 / 36分，实际运行: 1分
+2026-04-23 16:20:15,755 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-23 16:20:21,749 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-23 16:20:21] ✅ 阅读成功，已记入 31 秒（累计 117 秒 / 目标 2160 秒）
+[2026-04-23 16:20:21] 📊 进度(服务器记入/目标): 1分 / 36分，实际运行: 1分
+2026-04-23 16:20:50,603 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-23 16:20:56,637 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-23 16:20:56] ✅ 阅读成功，已记入 29 秒（累计 146 秒 / 目标 2160 秒）
+[2026-04-23 16:20:56] 📊 进度(服务器记入/目标): 2分 / 36分，实际运行: 2分
+2026-04-23 16:21:30,265 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-23 16:21:36,292 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-23 16:21:36] ✅ 阅读成功，已记入 34 秒（累计 180 秒 / 目标 2160 秒）
+[2026-04-23 16:21:36] 📊 进度(服务器记入/目标): 3分 / 36分，实际运行: 3分
+2026-04-23 16:22:10,136 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-23 16:22:16,303 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-23 16:22:16] ✅ 阅读成功，已记入 34 秒（累计 214 秒 / 目标 2160 秒）
+[2026-04-23 16:22:16] 📊 进度(服务器记入/目标): 3分 / 36分，实际运行: 3分
+2026-04-23 16:22:41,948 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-23 16:22:47,971 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-23 16:22:47] ✅ 阅读成功，已记入 25 秒（累计 239 秒 / 目标 2160 秒）
+[2026-04-23 16:22:47] 📊 进度(服务器记入/目标): 3分 / 36分，实际运行: 4分
+2026-04-23 16:23:15,955 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-23 16:23:22,004 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-23 16:23:22] ✅ 阅读成功，已记入 28 秒（累计 267 秒 / 目标 2160 秒）
+[2026-04-23 16:23:22] 📊 进度(服务器记入/目标): 4分 / 36分，实际运行: 4分
+[2026-04-23 16:23:26] 
+📚 微信读书阅读机器人 v0.3.6
+[2026-04-23 16:23:26] 🚀 启动模式: immediate
+[2026-04-23 16:23:26] 📖 阅读模式: smart_random
+[2026-04-23 16:23:26] 🎯 目标时长: 60-70 分钟
+[2026-04-23 16:23:26] 👥 用户数量: 1
+
+[2026-04-23 16:23:26] 🚀 启动模式: 立即执行
+2026-04-23 16:23:26,558 - ERROR    - ❌ 阅读会话执行失败: 用户 default 未找到有效的CURL配置
+2026-04-23 16:23:26,559 - WARNING  - ⚠️ 没有启用的通知通道
+2026-04-23 16:23:48,998 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-23 16:23:54,998 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-23 16:23:54] ✅ 阅读成功，已记入 26 秒（累计 293 秒 / 目标 2160 秒）
+[2026-04-23 16:23:54] 📊 进度(服务器记入/目标): 4分 / 36分，实际运行: 5分
+[2026-04-23 16:24:09] 
+📚 微信读书阅读机器人 v0.3.6
+[2026-04-23 16:24:09] 🚀 启动模式: immediate
+[2026-04-23 16:24:09] 📖 阅读模式: smart_random
+[2026-04-23 16:24:09] 🎯 目标时长: 60-70 分钟
+[2026-04-23 16:24:09] 👥 用户数量: 1
+
+[2026-04-23 16:24:09] 🚀 启动模式: 立即执行
+2026-04-23 16:24:09,977 - ERROR    - ❌ 阅读会话执行失败: Using SOCKS proxy, but the 'socksio' package is not installed. Make sure to install httpx using `pip install httpx[socks]`.
+2026-04-23 16:24:09,979 - WARNING  - ⚠️ 没有启用的通知通道
+[2026-04-23 16:24:18] 
+📚 微信读书阅读机器人 v0.3.6
+[2026-04-23 16:24:18] 🚀 启动模式: immediate
+[2026-04-23 16:24:18] 📖 阅读模式: smart_random
+[2026-04-23 16:24:18] 🎯 目标时长: 60-70 分钟
+[2026-04-23 16:24:18] 👥 用户数量: 1
+
+[2026-04-23 16:24:18] 🚀 启动模式: 立即执行
+2026-04-23 16:24:18,269 - ERROR    - ❌ 阅读会话执行失败: 用户 default 未找到有效的CURL配置
+2026-04-23 16:24:18,270 - WARNING  - ⚠️ 没有启用的通知通道
+2026-04-23 16:24:27,877 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-23 16:24:33,904 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-23 16:24:33] ✅ 阅读成功，已记入 33 秒（累计 326 秒 / 目标 2160 秒）
+[2026-04-23 16:24:33] 📊 进度(服务器记入/目标): 5分 / 36分，实际运行: 6分
+2026-04-23 16:25:02,331 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-23 16:25:08,334 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-23 16:25:08] ✅ 阅读成功，已记入 29 秒（累计 355 秒 / 目标 2160 秒）
+[2026-04-23 16:25:08] 📊 进度(服务器记入/目标): 5分 / 36分，实际运行: 6分
+[2026-04-23 16:25:22] 
+📚 微信读书阅读机器人 v0.3.6
+[2026-04-23 16:25:22] 🚀 启动模式: immediate
+[2026-04-23 16:25:22] 📖 阅读模式: smart_random
+[2026-04-23 16:25:22] 🎯 目标时长: 60-70 分钟
+[2026-04-23 16:25:22] 👥 用户数量: 1
+
+[2026-04-23 16:25:22] 🚀 启动模式: 立即执行
+2026-04-23 16:25:22,983 - ERROR    - ❌ 阅读会话执行失败: 用户 default 未找到有效的CURL配置
+2026-04-23 16:25:22,984 - WARNING  - ⚠️ 没有启用的通知通道
+[2026-04-23 16:25:27] 📡 收到信号 2，立即退出
+[2026-04-23 16:25:32] 
+📚 微信读书阅读机器人 v0.3.6
+[2026-04-23 16:25:32] 🚀 启动模式: immediate
+[2026-04-23 16:25:32] 📖 阅读模式: smart_random
+[2026-04-23 16:25:32] 🎯 目标时长: 60-70 分钟
+[2026-04-23 16:25:32] 👥 用户数量: 1
+
+[2026-04-23 16:25:32] 🚀 启动模式: 立即执行
+2026-04-23 16:25:32,983 - ERROR    - ❌ 阅读会话执行失败: 用户 default 未找到有效的CURL配置
+2026-04-23 16:25:32,984 - WARNING  - ⚠️ 没有启用的通知通道
+[2026-04-23 16:25:38] 
+📚 微信读书阅读机器人 v0.3.6
+[2026-04-23 16:25:38] 🚀 启动模式: immediate
+[2026-04-23 16:25:38] 📖 阅读模式: smart_random
+[2026-04-23 16:25:38] 🎯 目标时长: 30-50 分钟
+[2026-04-23 16:25:38] 👥 用户数量: 1
+
+[2026-04-23 16:25:38] 🚀 启动模式: 立即执行
+[2026-04-23 16:25:38] ✅ 已从全局文件加载CURL配置: curl_command.txt
+[2026-04-23 16:25:38] ✅ 用户 default 已使用CURL中的请求数据
+[2026-04-23 16:25:38] ✅ 用户 default CURL配置解析成功
+[2026-04-23 16:25:38] 🚀 微信读书阅读机器人启动
+[2026-04-23 16:25:38] 📋 配置信息: 阅读模式 smart_random, 目标时长 30-50 分钟
+[2026-04-23 16:25:38] ⏳ 启动延迟 6 秒...
+[2026-04-23 16:25:42] 📡 收到信号 2，立即退出
+[2026-04-23 16:26:50] 
+📚 微信读书阅读机器人 v0.3.6
+[2026-04-23 16:26:50] 🚀 启动模式: immediate
+[2026-04-23 16:26:50] 📖 阅读模式: smart_random
+[2026-04-23 16:26:50] 🎯 目标时长: 30-50 分钟
+[2026-04-23 16:26:50] 👥 用户数量: 1
+
+[2026-04-23 16:26:50] 🚀 启动模式: 立即执行
+[2026-04-23 16:26:50] ✅ 已从全局文件加载CURL配置: curl_command.txt
+[2026-04-23 16:26:50] ✅ 用户 default 已使用CURL中的请求数据
+[2026-04-23 16:26:50] ✅ 用户 default CURL配置解析成功
+[2026-04-23 16:26:50] 🚀 微信读书阅读机器人启动
+[2026-04-23 16:26:50] 📋 配置信息: 阅读模式 smart_random, 目标时长 30-50 分钟
+[2026-04-23 16:26:50] ⏳ 启动延迟 8 秒...
+[2026-04-23 16:26:58] 🎯 本次目标阅读时长: 30 分钟
+[2026-04-23 16:26:58] 🍪 刷新cookie...
+2026-04-23 16:26:59,158 - INFO     - HTTP Request: POST https://weread.qq.com/web/login/renewal "HTTP/1.1 200 OK"
+[2026-04-23 16:26:59] ✅ Cookie刷新成功，新密钥: qIo5_ZSY***
+[2026-04-23 16:27:01] 📡 收到信号 2，立即退出
+[2026-04-24 09:00:02] 
+📚 微信读书阅读机器人 v0.3.6
+[2026-04-24 09:00:02] 🚀 启动模式: immediate
+[2026-04-24 09:00:02] 📖 阅读模式: smart_random
+[2026-04-24 09:00:02] 🎯 目标时长: 60-70 分钟
+[2026-04-24 09:00:02] 👥 用户数量: 1
+
+[2026-04-24 09:00:02] 🚀 启动模式: 立即执行
+2026-04-24 09:00:02,107 - ERROR    - ❌ 阅读会话执行失败: 用户 default 未找到有效的CURL配置
+2026-04-24 09:00:02,107 - WARNING  - ⚠️ 没有启用的通知通道
+[2026-04-24 09:51:18] 
+📚 微信读书阅读机器人 v0.3.6
+[2026-04-24 09:51:18] 🚀 启动模式: immediate
+[2026-04-24 09:51:18] 📖 阅读模式: smart_random
+[2026-04-24 09:51:18] 🎯 目标时长: 30-50 分钟
+[2026-04-24 09:51:18] 👥 用户数量: 1
+
+[2026-04-24 09:51:18] 🚀 启动模式: 立即执行
+[2026-04-24 09:51:18] ✅ 已从全局文件加载CURL配置: curl_command.txt
+[2026-04-24 09:51:18] ✅ 用户 default 已使用CURL中的请求数据
+[2026-04-24 09:51:18] ✅ 用户 default CURL配置解析成功
+[2026-04-24 09:51:18] 🚀 微信读书阅读机器人启动
+[2026-04-24 09:51:18] 📋 配置信息: 阅读模式 smart_random, 目标时长 30-50 分钟
+[2026-04-24 09:51:18] ⏳ 启动延迟 8 秒...
+[2026-04-24 09:51:26] 🎯 本次目标阅读时长: 48 分钟
+[2026-04-24 09:51:26] 🍪 刷新cookie...
+2026-04-24 09:51:26,389 - INFO     - HTTP Request: POST https://weread.qq.com/web/login/renewal "HTTP/1.1 200 OK"
+[2026-04-24 09:51:26] ✅ Cookie刷新成功，新密钥: NZTJZi9r***
+2026-04-24 09:51:32,335 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 09:51:38,359 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 09:51:38,360 - WARNING  - ⚠️ 返回缺少 synckey，尝试异步修复，但仍计为已接受（响应: {'succ': 1}）
+[2026-04-24 09:51:38] ✅ 阅读成功，已记入 30 秒（累计 30 秒 / 目标 2880 秒）
+[2026-04-24 09:51:38] 📊 进度(服务器记入/目标): 0分 / 48分，实际运行: 0分
+2026-04-24 09:51:44,375 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/chapterInfos "HTTP/1.1 200 OK"
+2026-04-24 09:52:06,763 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 09:52:12,693 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 09:52:12] ✅ 阅读成功，已记入 28 秒（累计 58 秒 / 目标 2880 秒）
+[2026-04-24 09:52:12] 📊 进度(服务器记入/目标): 0分 / 48分，实际运行: 0分
+2026-04-24 09:52:40,112 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 09:52:46,157 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 09:52:46] ✅ 阅读成功，已记入 27 秒（累计 85 秒 / 目标 2880 秒）
+[2026-04-24 09:52:46] 📊 进度(服务器记入/目标): 1分 / 48分，实际运行: 1分
+2026-04-24 09:53:14,042 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 09:53:20,084 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 09:53:20] ✅ 阅读成功，已记入 27 秒（累计 112 秒 / 目标 2880 秒）
+[2026-04-24 09:53:20] 📊 进度(服务器记入/目标): 1分 / 48分，实际运行: 1分
+2026-04-24 09:53:48,133 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 09:53:54,155 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 09:53:54] ✅ 阅读成功，已记入 27 秒（累计 139 秒 / 目标 2880 秒）
+[2026-04-24 09:53:54] 📊 进度(服务器记入/目标): 2分 / 48分，实际运行: 2分
+2026-04-24 09:54:28,782 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 09:54:34,805 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 09:54:34] ✅ 阅读成功，已记入 34 秒（累计 173 秒 / 目标 2880 秒）
+[2026-04-24 09:54:34] 📊 进度(服务器记入/目标): 2分 / 48分，实际运行: 3分
+2026-04-24 09:55:04,463 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 09:55:10,476 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 09:55:10] ✅ 阅读成功，已记入 30 秒（累计 203 秒 / 目标 2880 秒）
+[2026-04-24 09:55:10] 📊 进度(服务器记入/目标): 3分 / 48分，实际运行: 3分
+2026-04-24 09:55:40,502 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 09:55:46,528 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 09:55:46] ✅ 阅读成功，已记入 30 秒（累计 233 秒 / 目标 2880 秒）
+[2026-04-24 09:55:46] 📊 进度(服务器记入/目标): 3分 / 48分，实际运行: 4分
+2026-04-24 09:56:19,304 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 09:56:25,321 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 09:56:25] ✅ 阅读成功，已记入 33 秒（累计 266 秒 / 目标 2880 秒）
+[2026-04-24 09:56:25] 📊 进度(服务器记入/目标): 4分 / 48分，实际运行: 4分
+2026-04-24 09:56:56,295 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 09:57:02,328 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 09:57:02] ✅ 阅读成功，已记入 31 秒（累计 297 秒 / 目标 2880 秒）
+[2026-04-24 09:57:02] 📊 进度(服务器记入/目标): 4分 / 48分，实际运行: 5分
+2026-04-24 09:57:34,916 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 09:57:41,187 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 09:57:41] ✅ 阅读成功，已记入 32 秒（累计 329 秒 / 目标 2880 秒）
+[2026-04-24 09:57:41] 📊 进度(服务器记入/目标): 5分 / 48分，实际运行: 6分
+2026-04-24 09:58:07,551 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 09:58:13,573 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 09:58:13] ✅ 阅读成功，已记入 26 秒（累计 355 秒 / 目标 2880 秒）
+[2026-04-24 09:58:13] 📊 进度(服务器记入/目标): 5分 / 48分，实际运行: 6分
+2026-04-24 09:58:43,880 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 09:58:49,894 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 09:58:49] ✅ 阅读成功，已记入 30 秒（累计 385 秒 / 目标 2880 秒）
+[2026-04-24 09:58:49] 📊 进度(服务器记入/目标): 6分 / 48分，实际运行: 7分
+2026-04-24 09:59:22,298 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 09:59:28,341 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 09:59:28] ✅ 阅读成功，已记入 33 秒（累计 418 秒 / 目标 2880 秒）
+[2026-04-24 09:59:28] 📊 进度(服务器记入/目标): 6分 / 48分，实际运行: 8分
+2026-04-24 09:59:56,763 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:00:02,805 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:00:02] ✅ 阅读成功，已记入 28 秒（累计 446 秒 / 目标 2880 秒）
+[2026-04-24 10:00:02] 📊 进度(服务器记入/目标): 7分 / 48分，实际运行: 8分
+2026-04-24 10:00:32,220 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:00:38,260 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:00:38] ✅ 阅读成功，已记入 30 秒（累计 476 秒 / 目标 2880 秒）
+[2026-04-24 10:00:38] 📊 进度(服务器记入/目标): 7分 / 48分，实际运行: 9分
+2026-04-24 10:01:13,084 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:01:19,100 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:01:19] ✅ 阅读成功，已记入 34 秒（累计 510 秒 / 目标 2880 秒）
+[2026-04-24 10:01:19] 📊 进度(服务器记入/目标): 8分 / 48分，实际运行: 9分
+2026-04-24 10:01:47,011 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:01:53,040 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:01:53] ✅ 阅读成功，已记入 27 秒（累计 537 秒 / 目标 2880 秒）
+[2026-04-24 10:01:53] 📊 进度(服务器记入/目标): 8分 / 48分，实际运行: 10分
+2026-04-24 10:02:27,001 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:02:33,044 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:02:33] ✅ 阅读成功，已记入 33 秒（累计 570 秒 / 目标 2880 秒）
+[2026-04-24 10:02:33] 📊 进度(服务器记入/目标): 9分 / 48分，实际运行: 11分
+2026-04-24 10:03:01,385 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:03:07,387 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:03:07] ✅ 阅读成功，已记入 28 秒（累计 598 秒 / 目标 2880 秒）
+[2026-04-24 10:03:07] 📊 进度(服务器记入/目标): 9分 / 48分，实际运行: 11分
+2026-04-24 10:03:34,611 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:03:40,613 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:03:40] ✅ 阅读成功，已记入 27 秒（累计 625 秒 / 目标 2880 秒）
+[2026-04-24 10:03:40] 📊 进度(服务器记入/目标): 10分 / 48分，实际运行: 12分
+2026-04-24 10:04:11,149 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:04:17,162 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:04:17] ✅ 阅读成功，已记入 31 秒（累计 656 秒 / 目标 2880 秒）
+[2026-04-24 10:04:17] 📊 进度(服务器记入/目标): 10分 / 48分，实际运行: 12分
+2026-04-24 10:04:44,664 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:04:50,686 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:04:50] ✅ 阅读成功，已记入 27 秒（累计 683 秒 / 目标 2880 秒）
+[2026-04-24 10:04:50] 📊 进度(服务器记入/目标): 11分 / 48分，实际运行: 13分
+2026-04-24 10:05:21,220 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:05:27,225 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:05:27] ✅ 阅读成功，已记入 31 秒（累计 714 秒 / 目标 2880 秒）
+[2026-04-24 10:05:27] 📊 进度(服务器记入/目标): 11分 / 48分，实际运行: 14分
+2026-04-24 10:06:01,653 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:06:07,661 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:06:07] ✅ 阅读成功，已记入 34 秒（累计 748 秒 / 目标 2880 秒）
+[2026-04-24 10:06:07] 📊 进度(服务器记入/目标): 12分 / 48分，实际运行: 14分
+2026-04-24 10:06:42,757 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:06:48,775 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:06:48] ✅ 阅读成功，已记入 35 秒（累计 783 秒 / 目标 2880 秒）
+[2026-04-24 10:06:48] 📊 进度(服务器记入/目标): 13分 / 48分，实际运行: 15分
+2026-04-24 10:07:19,363 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:07:25,376 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:07:25] ✅ 阅读成功，已记入 31 秒（累计 814 秒 / 目标 2880 秒）
+[2026-04-24 10:07:25] 📊 进度(服务器记入/目标): 13分 / 48分，实际运行: 15分
+2026-04-24 10:07:54,908 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:08:00,914 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:08:00] ✅ 阅读成功，已记入 29 秒（累计 843 秒 / 目标 2880 秒）
+[2026-04-24 10:08:00] 📊 进度(服务器记入/目标): 14分 / 48分，实际运行: 16分
+2026-04-24 10:08:30,242 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:08:36,176 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:08:36] ✅ 阅读成功，已记入 30 秒（累计 873 秒 / 目标 2880 秒）
+[2026-04-24 10:08:36] 📊 进度(服务器记入/目标): 14分 / 48分，实际运行: 17分
+2026-04-24 10:09:06,345 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:09:12,580 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:09:12] ✅ 阅读成功，已记入 30 秒（累计 903 秒 / 目标 2880 秒）
+[2026-04-24 10:09:12] 📊 进度(服务器记入/目标): 15分 / 48分，实际运行: 17分
+2026-04-24 10:09:39,362 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:09:45,393 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:09:45] ✅ 阅读成功，已记入 27 秒（累计 930 秒 / 目标 2880 秒）
+[2026-04-24 10:09:45] 📊 进度(服务器记入/目标): 15分 / 48分，实际运行: 18分
+2026-04-24 10:10:12,502 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:10:18,552 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:10:18] ✅ 阅读成功，已记入 27 秒（累计 957 秒 / 目标 2880 秒）
+[2026-04-24 10:10:18] 📊 进度(服务器记入/目标): 15分 / 48分，实际运行: 18分
+2026-04-24 10:10:49,136 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:10:55,193 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:10:55] ✅ 阅读成功，已记入 31 秒（累计 988 秒 / 目标 2880 秒）
+[2026-04-24 10:10:55] 📊 进度(服务器记入/目标): 16分 / 48分，实际运行: 19分
+2026-04-24 10:11:25,957 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:11:31,977 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:11:31] ✅ 阅读成功，已记入 30 秒（累计 1018 秒 / 目标 2880 秒）
+[2026-04-24 10:11:31] 📊 进度(服务器记入/目标): 16分 / 48分，实际运行: 20分
+2026-04-24 10:12:01,783 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:12:07,796 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:12:07] ✅ 阅读成功，已记入 30 秒（累计 1048 秒 / 目标 2880 秒）
+[2026-04-24 10:12:07] 📊 进度(服务器记入/目标): 17分 / 48分，实际运行: 20分
+2026-04-24 10:12:36,004 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:12:42,023 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:12:42] ✅ 阅读成功，已记入 28 秒（累计 1076 秒 / 目标 2880 秒）
+[2026-04-24 10:12:42] 📊 进度(服务器记入/目标): 17分 / 48分，实际运行: 21分
+2026-04-24 10:13:13,416 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:13:19,440 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:13:19] ✅ 阅读成功，已记入 31 秒（累计 1107 秒 / 目标 2880 秒）
+[2026-04-24 10:13:19] 📊 进度(服务器记入/目标): 18分 / 48分，实际运行: 21分
+2026-04-24 10:13:46,207 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:13:52,244 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:13:52] ✅ 阅读成功，已记入 27 秒（累计 1134 秒 / 目标 2880 秒）
+[2026-04-24 10:13:52] 📊 进度(服务器记入/目标): 18分 / 48分，实际运行: 22分
+2026-04-24 10:14:19,179 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:14:25,180 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:14:25] ✅ 阅读成功，已记入 27 秒（累计 1161 秒 / 目标 2880 秒）
+[2026-04-24 10:14:25] 📊 进度(服务器记入/目标): 19分 / 48分，实际运行: 22分
+2026-04-24 10:14:58,410 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:15:04,457 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:15:04] ✅ 阅读成功，已记入 33 秒（累计 1194 秒 / 目标 2880 秒）
+[2026-04-24 10:15:04] 📊 进度(服务器记入/目标): 19分 / 48分，实际运行: 23分
+2026-04-24 10:15:37,427 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:15:43,479 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:15:43] ✅ 阅读成功，已记入 33 秒（累计 1227 秒 / 目标 2880 秒）
+[2026-04-24 10:15:43] 📊 进度(服务器记入/目标): 20分 / 48分，实际运行: 24分
+2026-04-24 10:16:11,041 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:16:17,081 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:16:17] ✅ 阅读成功，已记入 27 秒（累计 1254 秒 / 目标 2880 秒）
+[2026-04-24 10:16:17] 📊 进度(服务器记入/目标): 20分 / 48分，实际运行: 24分
+2026-04-24 10:16:43,919 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:16:50,029 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:16:50] ✅ 阅读成功，已记入 26 秒（累计 1280 秒 / 目标 2880 秒）
+[2026-04-24 10:16:50] 📊 进度(服务器记入/目标): 21分 / 48分，实际运行: 25分
+2026-04-24 10:17:20,388 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:17:26,487 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:17:26] ✅ 阅读成功，已记入 30 秒（累计 1310 秒 / 目标 2880 秒）
+[2026-04-24 10:17:26] 📊 进度(服务器记入/目标): 21分 / 48分，实际运行: 26分
+2026-04-24 10:17:55,183 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:18:01,220 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:18:01] ✅ 阅读成功，已记入 29 秒（累计 1339 秒 / 目标 2880 秒）
+[2026-04-24 10:18:01] 📊 进度(服务器记入/目标): 22分 / 48分，实际运行: 26分
+2026-04-24 10:18:26,649 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:18:32,679 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:18:32] ✅ 阅读成功，已记入 25 秒（累计 1364 秒 / 目标 2880 秒）
+[2026-04-24 10:18:32] 📊 进度(服务器记入/目标): 22分 / 48分，实际运行: 27分
+2026-04-24 10:19:04,098 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:19:10,124 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:19:10] ✅ 阅读成功，已记入 31 秒（累计 1395 秒 / 目标 2880 秒）
+[2026-04-24 10:19:10] 📊 进度(服务器记入/目标): 23分 / 48分，实际运行: 27分
+2026-04-24 10:19:40,771 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:19:46,740 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:19:46] ✅ 阅读成功，已记入 30 秒（累计 1425 秒 / 目标 2880 秒）
+[2026-04-24 10:19:46] 📊 进度(服务器记入/目标): 23分 / 48分，实际运行: 28分
+2026-04-24 10:20:14,410 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:20:20,446 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:20:20] ✅ 阅读成功，已记入 28 秒（累计 1453 秒 / 目标 2880 秒）
+[2026-04-24 10:20:20] 📊 进度(服务器记入/目标): 24分 / 48分，实际运行: 28分
+2026-04-24 10:20:46,763 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:20:52,851 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:20:52] ✅ 阅读成功，已记入 26 秒（累计 1479 秒 / 目标 2880 秒）
+[2026-04-24 10:20:52] 📊 进度(服务器记入/目标): 24分 / 48分，实际运行: 29分
+2026-04-24 10:21:22,923 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:21:28,944 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:21:28] ✅ 阅读成功，已记入 30 秒（累计 1509 秒 / 目标 2880 秒）
+[2026-04-24 10:21:28] 📊 进度(服务器记入/目标): 25分 / 48分，实际运行: 30分
+2026-04-24 10:22:02,054 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:22:08,085 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:22:08] ✅ 阅读成功，已记入 33 秒（累计 1542 秒 / 目标 2880 秒）
+[2026-04-24 10:22:08] 📊 进度(服务器记入/目标): 25分 / 48分，实际运行: 30分
+2026-04-24 10:22:38,943 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:22:44,980 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:22:44] ✅ 阅读成功，已记入 30 秒（累计 1572 秒 / 目标 2880 秒）
+[2026-04-24 10:22:44] 📊 进度(服务器记入/目标): 26分 / 48分，实际运行: 31分
+2026-04-24 10:23:14,142 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:23:20,216 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:23:20] ✅ 阅读成功，已记入 30 秒（累计 1602 秒 / 目标 2880 秒）
+[2026-04-24 10:23:20] 📊 进度(服务器记入/目标): 26分 / 48分，实际运行: 31分
+2026-04-24 10:23:51,778 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:23:57,871 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:23:57] ✅ 阅读成功，已记入 31 秒（累计 1633 秒 / 目标 2880 秒）
+[2026-04-24 10:23:57] 📊 进度(服务器记入/目标): 27分 / 48分，实际运行: 32分
+2026-04-24 10:24:31,957 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:24:37,986 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:24:37] ✅ 阅读成功，已记入 34 秒（累计 1667 秒 / 目标 2880 秒）
+[2026-04-24 10:24:37] 📊 进度(服务器记入/目标): 27分 / 48分，实际运行: 33分
+2026-04-24 10:25:03,289 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:25:09,317 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:25:09] ✅ 阅读成功，已记入 26 秒（累计 1693 秒 / 目标 2880 秒）
+[2026-04-24 10:25:09] 📊 进度(服务器记入/目标): 28分 / 48分，实际运行: 33分
+2026-04-24 10:25:36,176 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:25:42,205 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:25:42] ✅ 阅读成功，已记入 27 秒（累计 1720 秒 / 目标 2880 秒）
+[2026-04-24 10:25:42] 📊 进度(服务器记入/目标): 28分 / 48分，实际运行: 34分
+2026-04-24 10:26:11,188 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:26:17,215 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:26:17] ✅ 阅读成功，已记入 29 秒（累计 1749 秒 / 目标 2880 秒）
+[2026-04-24 10:26:17] 📊 进度(服务器记入/目标): 29分 / 48分，实际运行: 34分
+2026-04-24 10:26:51,466 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:26:57,481 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:26:57] ✅ 阅读成功，已记入 34 秒（累计 1783 秒 / 目标 2880 秒）
+[2026-04-24 10:26:57] 📊 进度(服务器记入/目标): 29分 / 48分，实际运行: 35分
+2026-04-24 10:27:30,221 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:27:36,258 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:27:36] ✅ 阅读成功，已记入 33 秒（累计 1816 秒 / 目标 2880 秒）
+[2026-04-24 10:27:36] 📊 进度(服务器记入/目标): 30分 / 48分，实际运行: 36分
+2026-04-24 10:28:08,437 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:28:14,469 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:28:14] ✅ 阅读成功，已记入 32 秒（累计 1848 秒 / 目标 2880 秒）
+[2026-04-24 10:28:14] 📊 进度(服务器记入/目标): 30分 / 48分，实际运行: 36分
+2026-04-24 10:28:43,524 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:28:49,535 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:28:49] ✅ 阅读成功，已记入 29 秒（累计 1877 秒 / 目标 2880 秒）
+[2026-04-24 10:28:49] 📊 进度(服务器记入/目标): 31分 / 48分，实际运行: 37分
+2026-04-24 10:29:18,070 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:29:24,073 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:29:24] ✅ 阅读成功，已记入 28 秒（累计 1905 秒 / 目标 2880 秒）
+[2026-04-24 10:29:24] 📊 进度(服务器记入/目标): 31分 / 48分，实际运行: 37分
+2026-04-24 10:29:55,518 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:30:01,535 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:30:01] ✅ 阅读成功，已记入 31 秒（累计 1936 秒 / 目标 2880 秒）
+[2026-04-24 10:30:01] 📊 进度(服务器记入/目标): 32分 / 48分，实际运行: 38分
+2026-04-24 10:30:35,044 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:30:41,082 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:30:41] ✅ 阅读成功，已记入 33 秒（累计 1969 秒 / 目标 2880 秒）
+[2026-04-24 10:30:41] 📊 进度(服务器记入/目标): 32分 / 48分，实际运行: 39分
+2026-04-24 10:31:14,092 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:31:20,115 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:31:20] ✅ 阅读成功，已记入 32 秒（累计 2001 秒 / 目标 2880 秒）
+[2026-04-24 10:31:20] 📊 进度(服务器记入/目标): 33分 / 48分，实际运行: 39分
+2026-04-24 10:31:49,576 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:31:55,583 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:31:55] ✅ 阅读成功，已记入 29 秒（累计 2030 秒 / 目标 2880 秒）
+[2026-04-24 10:31:55] 📊 进度(服务器记入/目标): 33分 / 48分，实际运行: 40分
+2026-04-24 10:32:25,067 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:32:31,077 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:32:31] ✅ 阅读成功，已记入 29 秒（累计 2059 秒 / 目标 2880 秒）
+[2026-04-24 10:32:31] 📊 进度(服务器记入/目标): 34分 / 48分，实际运行: 41分
+2026-04-24 10:33:02,519 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:33:08,542 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:33:08] ✅ 阅读成功，已记入 31 秒（累计 2090 秒 / 目标 2880 秒）
+[2026-04-24 10:33:08] 📊 进度(服务器记入/目标): 34分 / 48分，实际运行: 41分
+2026-04-24 10:33:33,921 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:33:39,948 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:33:39] ✅ 阅读成功，已记入 25 秒（累计 2115 秒 / 目标 2880 秒）
+[2026-04-24 10:33:39] 📊 进度(服务器记入/目标): 35分 / 48分，实际运行: 42分
+2026-04-24 10:34:09,502 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:34:16,219 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:34:16] ✅ 阅读成功，已记入 30 秒（累计 2145 秒 / 目标 2880 秒）
+[2026-04-24 10:34:16] 📊 进度(服务器记入/目标): 35分 / 48分，实际运行: 42分
+2026-04-24 10:34:46,402 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:34:52,423 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:34:52] ✅ 阅读成功，已记入 30 秒（累计 2175 秒 / 目标 2880 秒）
+[2026-04-24 10:34:52] 📊 进度(服务器记入/目标): 36分 / 48分，实际运行: 43分
+2026-04-24 10:35:21,551 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:35:27,598 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:35:27] ✅ 阅读成功，已记入 29 秒（累计 2204 秒 / 目标 2880 秒）
+[2026-04-24 10:35:27] 📊 进度(服务器记入/目标): 36分 / 48分，实际运行: 44分
+2026-04-24 10:35:54,350 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:36:00,361 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:36:00] ✅ 阅读成功，已记入 27 秒（累计 2231 秒 / 目标 2880 秒）
+[2026-04-24 10:36:00] 📊 进度(服务器记入/目标): 37分 / 48分，实际运行: 44分
+2026-04-24 10:36:28,296 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:36:34,341 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:36:34] ✅ 阅读成功，已记入 28 秒（累计 2259 秒 / 目标 2880 秒）
+[2026-04-24 10:36:34] 📊 进度(服务器记入/目标): 37分 / 48分，实际运行: 45分
+2026-04-24 10:37:00,734 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:37:06,768 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:37:06] ✅ 阅读成功，已记入 26 秒（累计 2285 秒 / 目标 2880 秒）
+[2026-04-24 10:37:06] 📊 进度(服务器记入/目标): 38分 / 48分，实际运行: 45分
+2026-04-24 10:37:32,482 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:37:38,537 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:37:38] ✅ 阅读成功，已记入 26 秒（累计 2311 秒 / 目标 2880 秒）
+[2026-04-24 10:37:38] 📊 进度(服务器记入/目标): 38分 / 48分，实际运行: 46分
+2026-04-24 10:38:13,382 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:38:19,420 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:38:19] ✅ 阅读成功，已记入 35 秒（累计 2346 秒 / 目标 2880 秒）
+[2026-04-24 10:38:19] 📊 进度(服务器记入/目标): 39分 / 48分，实际运行: 46分
+2026-04-24 10:38:52,776 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:38:58,826 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:38:58] ✅ 阅读成功，已记入 33 秒（累计 2379 秒 / 目标 2880 秒）
+[2026-04-24 10:38:58] 📊 进度(服务器记入/目标): 39分 / 48分，实际运行: 47分
+2026-04-24 10:39:27,995 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:39:34,048 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:39:34] ✅ 阅读成功，已记入 29 秒（累计 2408 秒 / 目标 2880 秒）
+[2026-04-24 10:39:34] 📊 进度(服务器记入/目标): 40分 / 48分，实际运行: 48分
+2026-04-24 10:40:05,707 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:40:11,729 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:40:11] ✅ 阅读成功，已记入 31 秒（累计 2439 秒 / 目标 2880 秒）
+[2026-04-24 10:40:11] 📊 进度(服务器记入/目标): 40分 / 48分，实际运行: 48分
+2026-04-24 10:40:39,296 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:40:45,342 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:40:45] ✅ 阅读成功，已记入 28 秒（累计 2467 秒 / 目标 2880 秒）
+[2026-04-24 10:40:45] 📊 进度(服务器记入/目标): 41分 / 48分，实际运行: 49分
+2026-04-24 10:41:20,262 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:41:26,280 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:41:26] ✅ 阅读成功，已记入 35 秒（累计 2502 秒 / 目标 2880 秒）
+[2026-04-24 10:41:26] 📊 进度(服务器记入/目标): 41分 / 48分，实际运行: 50分
+2026-04-24 10:41:59,762 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:42:05,759 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:42:05] ✅ 阅读成功，已记入 33 秒（累计 2535 秒 / 目标 2880 秒）
+[2026-04-24 10:42:05] 📊 进度(服务器记入/目标): 42分 / 48分，实际运行: 50分
+2026-04-24 10:42:35,003 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:42:41,031 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:42:41] ✅ 阅读成功，已记入 29 秒（累计 2564 秒 / 目标 2880 秒）
+[2026-04-24 10:42:41] 📊 进度(服务器记入/目标): 42分 / 48分，实际运行: 51分
+2026-04-24 10:43:10,210 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:43:16,239 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:43:16] ✅ 阅读成功，已记入 29 秒（累计 2593 秒 / 目标 2880 秒）
+[2026-04-24 10:43:16] 📊 进度(服务器记入/目标): 43分 / 48分，实际运行: 51分
+2026-04-24 10:43:42,172 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:43:48,172 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:43:48] ✅ 阅读成功，已记入 26 秒（累计 2619 秒 / 目标 2880 秒）
+[2026-04-24 10:43:48] 📊 进度(服务器记入/目标): 43分 / 48分，实际运行: 52分
+2026-04-24 10:44:18,486 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:44:24,504 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:44:24] ✅ 阅读成功，已记入 30 秒（累计 2649 秒 / 目标 2880 秒）
+[2026-04-24 10:44:24] 📊 进度(服务器记入/目标): 44分 / 48分，实际运行: 52分
+2026-04-24 10:44:55,690 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:45:01,791 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:45:01] ✅ 阅读成功，已记入 31 秒（累计 2680 秒 / 目标 2880 秒）
+[2026-04-24 10:45:01] 📊 进度(服务器记入/目标): 44分 / 48分，实际运行: 53分
+2026-04-24 10:45:33,656 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:45:39,677 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:45:39] ✅ 阅读成功，已记入 32 秒（累计 2712 秒 / 目标 2880 秒）
+[2026-04-24 10:45:39] 📊 进度(服务器记入/目标): 45分 / 48分，实际运行: 54分
+2026-04-24 10:46:10,362 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:46:16,168 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:46:16] ✅ 阅读成功，已记入 30 秒（累计 2742 秒 / 目标 2880 秒）
+[2026-04-24 10:46:16] 📊 进度(服务器记入/目标): 45分 / 48分，实际运行: 54分
+2026-04-24 10:46:47,220 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:46:53,223 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:46:53] ✅ 阅读成功，已记入 31 秒（累计 2773 秒 / 目标 2880 秒）
+[2026-04-24 10:46:53] 📊 进度(服务器记入/目标): 46分 / 48分，实际运行: 55分
+2026-04-24 10:47:19,667 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:47:25,697 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:47:25] ✅ 阅读成功，已记入 26 秒（累计 2799 秒 / 目标 2880 秒）
+[2026-04-24 10:47:25] 📊 进度(服务器记入/目标): 46分 / 48分，实际运行: 55分
+2026-04-24 10:47:58,280 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:48:04,315 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:48:04] ✅ 阅读成功，已记入 33 秒（累计 2832 秒 / 目标 2880 秒）
+[2026-04-24 10:48:04] 📊 进度(服务器记入/目标): 47分 / 48分，实际运行: 56分
+2026-04-24 10:48:29,771 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:48:35,814 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:48:35] ✅ 阅读成功，已记入 25 秒（累计 2857 秒 / 目标 2880 秒）
+[2026-04-24 10:48:35] 📊 进度(服务器记入/目标): 47分 / 48分，实际运行: 57分
+2026-04-24 10:49:06,264 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+2026-04-24 10:49:12,288 - INFO     - HTTP Request: POST https://weread.qq.com/web/book/read "HTTP/1.1 200 OK"
+[2026-04-24 10:49:12] ✅ 阅读成功，已记入 31 秒（累计 2888 秒 / 目标 2880 秒）
+[2026-04-24 10:49:12] 📊 进度(服务器记入/目标): 48分 / 48分，实际运行: 57分
+[2026-04-24 10:49:42] 🎉 阅读任务完成！
+[2026-04-24 10:49:42] 📊 会话统计:
+[2026-04-24 10:49:42] 📊 微信读书自动阅读统计报告
+👤 用户名称: default
+⏰ 开始时间: 2026-04-24 09:51:26
+⏱️ 实际阅读: 58分16秒
+🎯 目标时长: 48分钟
+✅ 成功请求: 97次
+❌ 失败请求: 0次
+📈 成功率: 100.0%
+📚 阅读书籍: 1本 (动态书籍(ccb32020...))
+📄 阅读章节: 1个
+☕ 休息次数: 0次 (共0秒)
+🚀 平均响应: 6.04秒
+🧾 服务器记入时长: 48分8秒
+
+🎉 本次阅读任务完成！
+[2026-04-24 10:49:43] ✅ 通道 pushplus 通知发送成功
+[2026-04-24 10:49:43] 📊 通知发送完成: 1/1 个通道成功
