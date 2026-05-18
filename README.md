@@ -1,6 +1,7 @@
 # 微信读书自动阅读机器人
 
 > 本项目基于 [funnyzak/weread-bot](https://github.com/funnyzak/weread-bot) 简化而来，移除了复杂的功能模块，保留核心阅读请求能力。
+> 参考项目: [findmover/wxread](https://github.com/findmover/wxread), [hankliucode/wxread](https://github.com/hankliucode/wxread)
 
 一个简洁的微信读书自动阅读工具，通过模拟阅读请求来积累阅读时长。
 
