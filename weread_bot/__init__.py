@@ -1,4 +1,3 @@
-"""weread_bot package initializer"""
-from .config import VERSION
+from .weread import main
 
-__all__ = ["VERSION"]
+__all__ = ["main"]
