@@ -32,7 +32,7 @@ python3 weread-bot.py -c curl_command.txt -t 60 -i 30
 - `-i, --interval`: 请求间隔(秒) (默认: 30)
 - `-v, --verbose`: 显示详细日志
 
-## 使用方��
+## 使用方案
 
 ```bash
 # 阅读60分钟，间隔30秒
