@@ -1,8 +1,6 @@
 # 微信读书自动阅读机器人
 
-> 本项目基于 [funnyzak/weread-bot](https://github.com/funnyzak/weread-bot) 简化而来，移除了复杂的功能模块，保留核心阅读请求能力。
-> 
-> 简化原因：原项目功能较多（如配置管理、会话管理、通知推送、日志系统等），对于个人简单使用场景来说过于复杂，因此进行精简只保留最核心的阅读请求功能。
+> 本项目基于 [funnyzak/weread-bot](https://github.com/funnyzak/weread-bot) 简化而来，移除了复杂配置，保留核心阅读请求能力。
 
 一个简洁的微信读书自动阅读工具，通过模拟阅读请求来积累阅读时长。
 
@@ -25,7 +23,7 @@ pip install -r requirements.txt
 ### 3. 运行
 
 ```bash
-python weread-bot.py -c curl_command.txt -t 60 -i 30
+python3 weread-bot.py -c curl_command.txt -t 60 -i 30
 ```
 
 参数说明：
@@ -34,17 +32,17 @@ python weread-bot.py -c curl_command.txt -t 60 -i 30
 - `-i, --interval`: 请求间隔(秒) (默认: 30)
 - `-v, --verbose`: 显示详细日志
 
-## 使用方式
+## 使用方��
 
 ```bash
 # 阅读60分钟，间隔30秒
-python weread-bot.py -t 60 -i 30
+python3 weread-bot.py -t 60 -i 30
 
 # 阅读30分钟，间隔20秒
-python weread-bot.py -t 30 -i 20
+python3 weread-bot.py -t 30 -i 20
 
 # 详细模式
-python weread-bot.py -v
+python3 weread-bot.py -v
 ```
 
 ## 项目结构
@@ -52,15 +50,21 @@ python weread-bot.py -v
 ```
 weread-bot/
 ├── weread-bot.py         # 入口脚本
-├── requirements.txt     # 依赖(仅requests)
+├── requirements.txt     # 依赖
 ├── curl_command.txt     # CURL命令(需自行抓取)
 ├── README.md
 ├── LICENSE
-├── AGENTS.md
-└── weread_bot/
+└── weread_bot/           # 核心模块(来自原始项目)
     ├── __init__.py
-    ├── __main__.py
-    └── weread.py         # 核心逻辑
+    ├── app.py
+    ├── config.py
+    ├── http_client.py
+    ├── logger.py
+    ├── notification.py
+    ├── reading.py
+    ├── session.py
+    ├── utils.py
+    └── config_manager.py
 ```
 
 ## 注意事项

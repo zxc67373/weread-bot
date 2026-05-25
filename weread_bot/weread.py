@@ -91,10 +91,7 @@ def load_curl_file(file_path: str) -> str:
 
 
 def refresh_cookie(headers: Dict, cookies: Dict, cookie_data: Dict) -> bool:
-    if cookies.get("wr_skey"):
-        logger.info("使用现有cookie")
-        return True
-
+    """刷新cookie，每次都尝试刷新而不是直接返回"""
     logger.info("刷新cookie...")
     try:
         response = requests.post(RENEW_URL, headers=headers, cookies=cookies, json=cookie_data, timeout=30)
@@ -126,13 +123,16 @@ def send_reading_request(
     data: Dict,
     initial_s: Optional[str] = None
 ) -> Tuple[bool, int]:
-    """发送阅读请求，优先使用CURL中的s值"""
-    # 先尝试使用初始s值（来自CURL）
+    """发送阅读请求，完整的重试逻辑包括表单编码回退"""
+    # 记录连续失败次数
+    consecutive_failures = 0
+
+    # 第一次尝试：用 initial_s (来自CURL的原始s)
     if initial_s:
-        test_data = data.copy()
-        test_data["s"] = initial_s
+        data_with_initial_s = data.copy()
+        data_with_initial_s["s"] = initial_s
         try:
-            response = session.post(url, headers=headers, cookies=cookies, json=test_data, timeout=30)
+            response = session.post(url, headers=headers, cookies=cookies, json=data_with_initial_s, timeout=30)
             resp_data = response.json()
             logger.debug(f"CURL-s响应: {resp_data}")
             if resp_data.get("succ") or resp_data.get("success"):
@@ -148,8 +148,7 @@ def send_reading_request(
         except Exception as e:
             logger.debug(f"尝试CURL中的s异常: {e}")
 
-    # 使用计算的s
-    data["s"] = calculate_hash(encode_data(data))
+    # 第二次尝试：用data中已计算好的s
     try:
         response = session.post(url, headers=headers, cookies=cookies, json=data, timeout=30)
         response.raise_for_status()
@@ -165,15 +164,71 @@ def send_reading_request(
             if credited == 0:
                 credited = int(data.get("rt", 0)) if isinstance(data.get("rt", 0), (int, float)) else 0
             return True, credited
-        # 检查是否是登录超时错误
-        if resp_data.get("errCode") == -2012:
-            logger.warning("Cookie已过期，需要重新抓取CURL")
-        else:
-            logger.warning(f"请求未接受: {resp_data}")
-        return False, 0
     except Exception as e:
-        logger.error(f"请求失败: {e}")
-        return False, 0
+        logger.debug(f"计算s请求异常: {e}")
+
+    # 第三次尝试：表单编码回退
+    consecutive_failures = 1
+    try:
+        encoded_body = encode_data(data)
+        headers_form = headers.copy()
+        headers_form["Content-Type"] = "application/x-www-form-urlencoded"
+
+        logger.debug("尝试表单编码回退请求")
+        form_resp = session.post(url, headers=headers_form, cookies=cookies, data=encoded_body, timeout=30)
+        form_data = form_resp.json()
+        logger.debug(f"表单编码响应: {form_data}")
+
+        if form_data.get("succ") or form_data.get("success"):
+            credited = 0
+            for key in ["addTime", "add_time", "readTime", "read_time", "time", "duration", "inc"]:
+                if key in form_data and isinstance(form_data[key], (int, float)):
+                    credited = int(form_data[key])
+                    break
+            if credited == 0:
+                credited = int(data.get("rt", 0)) if isinstance(data.get("rt", 0), (int, float)) else 0
+            logger.info(f"表单编码回退成功，记入 {credited}秒")
+            return True, credited
+    except Exception as e:
+        logger.debug(f"表单编码回退异常: {e}")
+
+    # 第四次尝试：s变体
+    consecutive_failures = 2
+    logger.debug("尝试s变体...")
+    base_s = data.get("s", "")
+    candidates = [base_s]
+    if len(base_s) > 8:
+        candidates.append(base_s[-8:])
+        candidates.append(base_s[:8])
+        candidates.append(base_s[-4:])
+        candidates.append(base_s[:4])
+
+    for s_variant in candidates:
+        if s_variant == base_s:
+            continue
+        test_data = data.copy()
+        test_data["s"] = s_variant
+        try:
+            resp = session.post(url, headers=headers, cookies=cookies, json=test_data, timeout=30)
+            resp_json = resp.json()
+            if resp_json.get("succ") or resp_json.get("success"):
+                credited = 0
+                for key in ["addTime", "add_time", "readTime", "read_time", "time", "duration", "inc"]:
+                    if key in resp_json and isinstance(resp_json[key], (int, float)):
+                        credited = int(resp_json[key])
+                        break
+                if credited == 0:
+                    credited = int(data.get("rt", 0)) if isinstance(data.get("rt", 0), (int, float)) else 0
+                logger.info(f"s变体 {s_variant} 成功，记入 {credited}秒")
+                return True, credited
+        except:
+            pass
+
+    if resp_data.get("errCode") == -2012:
+        logger.warning("Cookie已过期，需要重新抓取CURL")
+    else:
+        logger.warning(f"请求未接受: {resp_data}")
+    return False, 0
 
 
 def main():
@@ -216,10 +271,16 @@ def main():
         "pr": curl_data.get("pr", 1),
         "ps": curl_data.get("ps"),
         "pc": curl_data.get("pc"),
+        "sm": curl_data.get("sm", ""),  # 保留句子片段
+        "sg": curl_data.get("sg", ""),  # 保留签名
     }
 
     target_seconds = int(args.target) * 60
     interval = int(args.interval)
+
+    # 初始阅读位置参数
+    base_ci = curl_data.get("ci", 1)
+    base_co = curl_data.get("co", 1)
 
     logger.info(f"目标: {args.target}分钟, 间隔: {interval}秒")
 
@@ -241,12 +302,38 @@ def main():
         data["ts"] = int(current_time * 1000) + random.randint(0, 1000)
         data["rn"] = random.randint(0, 1000)
         data["ct"] = current_time
+
+        # 每次重新设置阅读位置 - 完全使用原始CURL数据
+        # 服务器可能需要看到完全相同的阅读位置才能持续记入
+        data["b"] = curl_data.get("b")
+        data["c"] = curl_data.get("c")
+        data["ci"] = curl_data.get("ci")
+        data["co"] = curl_data.get("co", 1)
+        data["pr"] = curl_data.get("pr", 1)
+        data["sm"] = curl_data.get("sm", "")
+
+        # 重新设置用户身份标识
+        data["ps"] = curl_data.get("ps")
+        data["pc"] = curl_data.get("pc")
+        data["appId"] = curl_data.get("appId")
+
         last_time = current_time
+
+        # 动态计算sg签名
+        signature_string = f"{data['ts']}{data['rn']}{KEY}"
+        data["sg"] = hashlib.sha256(signature_string.encode()).hexdigest()
+
+        # 重新计算s签名
+        data["s"] = calculate_hash(encode_data(data))
+        logger.debug(f"计算s: {data['s']}, sg: {data['sg'][:16]}...")
+        # 打印完整data用于调试
+        logger.debug(f"完整data: {data}")
 
         # 动态设置referer
         if book_id:
             headers["Referer"] = f"https://weread.qq.com/web/reader/{book_id}"
 
+        # 发送阅读请求，优先尝试用CURL中的初始s
         success, credited = send_reading_request(session, READ_URL, headers, cookies, data, initial_s)
 
         if success:
@@ -256,6 +343,9 @@ def main():
             logger.info(f"记入 {credited}秒 (累计 {credited_seconds}/{target_seconds}秒)")
         else:
             failed_reads += 1
+            # 失败后尝试刷新cookie
+            cookie_data = {"rq": "%2Fweb%2Fbook%2Fread", "ql": ""}
+            refresh_cookie(headers, cookies, cookie_data)
 
         elapsed = int(time.time() - start_time)
         progress = credited_seconds / target_seconds * 100
