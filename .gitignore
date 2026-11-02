@@ -1,0 +1,8 @@
+# 运行时生成 / 含敏感信息，不要提交
+curl_command.txt
+cookies_state.json
+config.yaml
+logs/
+.venv/
+__pycache__/
+*.pyc

@@ -1,3 +1,4 @@
+import json
 import time
 import random
 import hashlib
@@ -5,7 +6,7 @@ import asyncio
 import logging
 from datetime import datetime
 from pathlib import Path
-from typing import List, Tuple
+from typing import List, Optional, Tuple
 
 from .http_client import HttpClient
 from .reading import SmartReadingManager
@@ -128,7 +129,11 @@ class WeReadSessionManager:
         self.user_app_id = None
         # 连续未被接受的请求计数器（用于避免无限刷新cookie）
         self._consecutive_failures = 0
-        
+
+        # curl 源文件指纹与 cookie 持久化路径（用于每天无人值守续期）
+        self._curl_source_hash = None
+        self._state_file = None
+
         self._load_curl_config()
 
     def _load_curl_config(self):
@@ -167,6 +172,11 @@ class WeReadSessionManager:
         # 解析CURL配置
         try:
             self.headers, self.cookies, curl_data = CurlParser.parse_curl_command(curl_content)
+
+            # 记录源文件指纹，并加载上次续期后保存的 cookie
+            self._curl_source_hash = hashlib.sha256(curl_content.encode("utf-8")).hexdigest()
+            self._state_file = self._cookie_state_path()
+            self._apply_cookie_state()
 
             # 如果没有 User-Agent，设置一个默认的
             if not any(k.lower() == "user-agent" for k in self.headers.keys()):
@@ -207,6 +217,61 @@ class WeReadSessionManager:
         except Exception as e:
             logging.error(f"❌ 用户 {self.user_name} CURL配置解析失败: {e}")
             raise
+
+    def _cookie_state_path(self) -> Optional[Path]:
+        """cookie 状态文件放在 curl 源文件同目录；仅文件模式可用"""
+        path = ""
+        if self.user_config and self.user_config.file_path:
+            path = self.user_config.file_path
+        elif self.config.curl_file_path:
+            path = self.config.curl_file_path
+        if not path:
+            return None
+        return Path(path).resolve().parent / "cookies_state.json"
+
+    def _apply_cookie_state(self):
+        """加载上次续期保存的 cookie（仅当 curl 源文件未变化时生效）"""
+        if not self._state_file or not self._state_file.exists():
+            return
+        try:
+            state = json.loads(self._state_file.read_text(encoding="utf-8"))
+            if state.get("source_sha256") != self._curl_source_hash:
+                logging.info("ℹ️ curl_command.txt 已更新，忽略旧的 cookie 状态")
+                return
+            cached = state.get("cookies") or {}
+            applied = []
+            for name in ("wr_skey", "wr_vid", "wr_rt", "wr_pf", "wr_ql"):
+                value = cached.get(name)
+                if value and value != "undefined":
+                    self.cookies[name] = value
+                    applied.append(name)
+            if applied:
+                logging.info(f"🔑 已加载持久化 cookie: {', '.join(applied)}")
+        except Exception as e:
+            logging.debug(f"⚠️ 读取 cookie 状态失败: {e}")
+
+    def _save_cookie_state(self):
+        """续期成功后把最新 cookie 落盘，供下一次运行复用"""
+        if not self._state_file or not self._curl_source_hash:
+            return
+        try:
+            cookies = {
+                name: self.cookies.get(name)
+                for name in ("wr_skey", "wr_vid", "wr_rt", "wr_pf", "wr_ql")
+                if self.cookies.get(name) and self.cookies.get(name) != "undefined"
+            }
+            state = {
+                "source_sha256": self._curl_source_hash,
+                "updated_at": datetime.now().isoformat(timespec="seconds"),
+                "cookies": cookies,
+            }
+            tmp = self._state_file.with_suffix(".json.tmp")
+            tmp.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
+            tmp.chmod(0o600)
+            tmp.replace(self._state_file)
+            logging.debug(f"💾 已持久化 cookie 状态: {self._state_file}")
+        except Exception as e:
+            logging.debug(f"⚠️ 保存 cookie 状态失败: {e}")
 
     async def start_reading_session(self) -> ReadingSession:
         """开始阅读会话"""
@@ -688,6 +753,12 @@ class WeReadSessionManager:
                 return False
 
             self.cookies["wr_skey"] = new_skey
+            # 同步续期返回的其它 cookie（wr_rt 是长期刷新令牌，务必保留）
+            for name in ("wr_vid", "wr_rt", "wr_pf"):
+                value = response.cookies.get(name)
+                if value and value != "undefined":
+                    self.cookies[name] = value
+            self._save_cookie_state()
             print(f"✅ Cookie刷新成功，新密钥: {new_skey[:8]}***")
             return True
 
